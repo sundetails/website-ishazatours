@@ -102,6 +102,7 @@
 .carousel {
     width: 100vw; /* Make the carousel cover the entire viewport width */
     height: 100vh; /* Make the carousel cover the entire viewport height */
+    position: relative;
 }
 
 .carousel-item img {
@@ -162,7 +163,7 @@
 
 .sticky-top.navbar-light .navbar-nav .nav-link {
     padding: 20px 0;
-    color: var(--dark) !important;
+    color: white!important;
 }
 
 @font-face {
@@ -171,9 +172,8 @@
 }
 
 @font-face {
-    font-family: 'FontCursive'; /* Specify a name for your font */
-    src: url('cursive_font.ttf');/* Adjust the path to your font file */
-    /* You can also include additional font formats (e.g., woff, woff2) for better browser support */
+    font-family: 'FontCursive'; 
+    src: url('cursive_font.ttf');
 }
 
 .slogan{
@@ -297,6 +297,42 @@
 .breadcrumb-item + .breadcrumb-item::before {
     color: rgba(255, 255, 255, .5);
 }
+
+/* Booking Menu */
+.upbooking {
+    
+    background-color: #f8f9fa; 
+    padding: top 20px;
+    padding-bottom: 10px;    
+
+}
+
+.upbooking .container {
+   
+    max-width: 1200px; 
+    margin: 0 auto; 
+
+}
+
+.upbooking .row.align-items-center {
+    
+    min-height: 60px; 
+}
+
+.upbooking .custom-select,
+.upbooking .form-control {
+    
+    height: 47px; 
+}
+
+.upbooking .btn-primary {
+    
+    height: 47px; 
+    margin-top: -2px; 
+}
+
+
+
 
 
 /*** Section Title ***/
