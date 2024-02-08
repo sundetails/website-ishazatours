@@ -90,9 +90,56 @@
     transition: .5s;
 }
 
+
+
 .sticky-top.navbar-light .navbar-nav .nav-link {
     padding: 20px 0;
     color: var(--dark) !important;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('outfit.ttf');
+}
+
+@font-face {
+    font-family: 'FontCursive'; /* Specify a name for your font */
+    src: url('vibes.ttf');/* Adjust the path to your font file */
+    /* You can also include additional font formats (e.g., woff, woff2) for better browser support */
+}
+
+.slogan{
+    font-family: 'FontCursive',Arial, Helvetica, sans-serif, cursive !important;
+    font-style: italic;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 40px;
+    color: white;
+    text-transform: lowercase !important;
+
+}
+
+.outfit{
+    font-family: 'Outfit' !important;
+    font-size: 60px;
+    line-height: 50px;
+    font-weight: 800;
+}
+
+.tabs{
+    font-family: 'Outfit'!important;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    text-transform: uppercase !important;
+}
+
+.text-small{
+    font-family: 'Outfit' !important;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+
 }
 
 .navbar-light .navbar-nav .nav-link:hover,
@@ -389,6 +436,13 @@
     border: 1px solid #FFFFFF;
     border-radius: 35px;
     transition: .3s;
+}
+
+.footext{
+    font-family: 'Outfit' !important;
+    font-size: 15px;
+    font-weight: 400;
+    height: 22.5px;
 }
 
 .footer .btn.btn-social:hover {
