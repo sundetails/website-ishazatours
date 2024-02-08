@@ -100,20 +100,42 @@
 
         <div class="container-fluid bg-primary py-5 mb-5 hero-header">
             <div class="container py-5">
-                <div class="row justify-content-center py-5">
-                    <div class="col-lg-10 pt-lg-5 mt-lg-5 text-center">
-                        <h1 class="text-white mb-3 animated slideInDown slogan">Explore the world
-                        </h1>
-                        <p class="fs-4 text-white mb-4 animated slideInDown outfit">Find your next story </p>
-                        <div class="position-relative w-75 mx-auto animated slideInDown">
-                            <input class="form-control border-0 rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Eg: Thailand">
-                            <button type="button" class="btn btn-primary rounded-pill py-2 px-4 position-absolute top-0 end-0 me-2" style="margin-top: 7px;">Search</button>
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/bg-hero.jpg" class="d-block w-100" alt="Image 1">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h4 class="slo">Explore the world</h4>
+                                <p class="out">Find your next story </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/river.jpg" class="d-block w-100" alt="Image 2">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h4 class="slo">Discover new places</h4>
+                                <p class="out">Create unforgettable memories</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/seated.jpg" class="d-block w-100" alt="Image 3">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h4 class="slo">Experience adventures</h4>
+                                <p class="out">Start your journey today</p>
+                            </div>
                         </div>
                     </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-            </div>              
+            </div>
         </div>
-    </div>
+      </div>
     <!-- Navbar & Hero End -->
 
 

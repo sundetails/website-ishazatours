@@ -67,6 +67,11 @@
         return false;
     });
 
+    // Activate hero carousel
+    $('.carousel').carousel({
+        interval: 3000 // Change slides every 3 seconds
+    });
+
 
     // Testimonials carousel
     $(".testimonial-carousel").owlCarousel({

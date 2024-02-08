@@ -89,6 +89,74 @@
     outline: none;
     transition: .5s;
 }
+.container-fluid, .container {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.carousel-item {
+    position: relative; /* Positioning context for the overlay and caption */
+}
+
+.carousel {
+    width: 100vw; /* Make the carousel cover the entire viewport width */
+    height: 100vh; /* Make the carousel cover the entire viewport height */
+}
+
+.carousel-item img {
+    max-width: 100%;; /* Make the image cover the entire width of the carousel */
+    max-height: 100%; 
+    object-fit:contain;
+    margin: auto;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 40%;
+    right: 15%;
+    bottom: 80px;
+    left: 15%;
+    z-index: 10;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+  }
+
+  @media (max-width: 576px) {
+    .carousel-caption h4 {
+      font-size: 18px;
+      color: #F5F5F5 !important;
+    }
+    .carousel-caption h1 {
+      font-size: 30px;
+      color: #F5F5F5; 
+    }
+  }
+  
+
+
+.slo{
+    font-size: 100px !important;
+    font-family: 'FontCursive'!important;
+    line-height: 30px;
+    font-weight: 100;
+    text-transform: lowercase !important;
+    color: #DDDDDD !important;
+}
+
+.out{
+    font-size: 100px !important;
+    font-family: 'Outfit';
+    line-height: 50px;
+    font-weight: 300;
+    color: #F5F5F5 !important;
+
+}
+
+.carousel-caption h4,
+
 
 
 
@@ -104,7 +172,7 @@
 
 @font-face {
     font-family: 'FontCursive'; /* Specify a name for your font */
-    src: url('vibes.ttf');/* Adjust the path to your font file */
+    src: url('cursive_font.ttf');/* Adjust the path to your font file */
     /* You can also include additional font formats (e.g., woff, woff2) for better browser support */
 }
 
@@ -151,6 +219,7 @@
     max-height: 60px;
     transition: .5s;
 }
+
 
 .sticky-top.navbar-light .navbar-brand img {
     max-height: 45px;
@@ -219,11 +288,11 @@
 
 /*** Hero Header ***/
 .hero-header {
-    background: linear-gradient(rgba(20, 20, 31, .7), rgba(20, 20, 31, .7)), url(../img/bg-hero.jpg);
+    background: linear-gradient(hwb(240 84% 13% / 0.7), rgba(214, 214, 220, 0.897));
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-}
+} 
 
 .breadcrumb-item + .breadcrumb-item::before {
     color: rgba(255, 255, 255, .5);
