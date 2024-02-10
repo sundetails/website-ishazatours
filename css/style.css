@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-    --primary: #86B817;
+    --primary: #602F06;
     --secondary: #FE8800;
     --light: #F5F5F5;
     --dark: #14141F;
@@ -83,38 +83,59 @@
     position: relative;
     margin-right: 25px;
     padding: 35px 0;
-    color: #FFFFFF !important;
-    font-size: 18px;
+    color: black !important;
+    font-size: 13px;
     font-weight: 600;
     outline: none;
     transition: .5s;
 }
-.container-fluid, .container {
+
+.container-fluid,
+.container {
     margin: 0;
     padding: 0;
     height: 100%;
 }
 
 .carousel-item {
-    position: relative; /* Positioning context for the overlay and caption */
+    position: relative;
+    /* Positioning context for the overlay and caption */
 }
 
 .carousel {
-    width: 100vw; /* Make the carousel cover the entire viewport width */
-    height: 100vh; /* Make the carousel cover the entire viewport height */
+    width: 100vw;
+    /* Make the carousel cover the entire viewport width */
+    /* height: 100vh; Make the carousel cover the entire viewport height */
     position: relative;
 }
 
 .carousel-item img {
-    max-width: 100%;; /* Make the image cover the entire width of the carousel */
-    max-height: 100%; 
-    object-fit:contain;
+    max-width: 100%;
+    ;
+    /* Make the image cover the entire width of the carousel */
+    max-height: 100%;
+    object-fit: contain;
     margin: auto;
+}
+
+
+.carousel-item::before {
+    content: "";
+    /* Create a pseudo-element to serve as the overlay */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Set the color and transparency of the overlay */
+    z-index: 1;
+    /* Ensure the overlay is behind the image */
 }
 
 .carousel-caption {
     position: absolute;
-    top: 40%;
+    top: 15%;
     right: 15%;
     bottom: 80px;
     left: 15%;
@@ -123,35 +144,36 @@
     padding-bottom: 20px;
     color: #fff;
     text-align: center;
-  }
+}
 
-  @media (max-width: 576px) {
+@media (max-width: 576px) {
     .carousel-caption h4 {
-      font-size: 18px;
-      color: #F5F5F5 !important;
+        font-size: 18px;
+        color: #F5F5F5 !important;
     }
+
     .carousel-caption h1 {
-      font-size: 30px;
-      color: #F5F5F5; 
+        font-size: 30px;
+        color: #F5F5F5;
     }
-  }
-  
+}
 
 
-.slo{
+
+.slo {
     font-size: 100px !important;
-    font-family: 'FontCursive'!important;
+    font-family: 'FontCursive' !important;
     line-height: 30px;
     font-weight: 100;
     text-transform: lowercase !important;
     color: #DDDDDD !important;
 }
 
-.out{
+.out {
     font-size: 100px !important;
     font-family: 'Outfit';
     line-height: 50px;
-    font-weight: 300;
+    font-weight: 700;
     color: #F5F5F5 !important;
 
 }
@@ -163,7 +185,7 @@
 
 .sticky-top.navbar-light .navbar-nav .nav-link {
     padding: 20px 0;
-    color: white!important;
+    color: white !important;
 }
 
 @font-face {
@@ -172,12 +194,12 @@
 }
 
 @font-face {
-    font-family: 'FontCursive'; 
+    font-family: 'FontCursive';
     src: url('cursive_font.ttf');
 }
 
-.slogan{
-    font-family: 'FontCursive',Arial, Helvetica, sans-serif, cursive !important;
+.slogan {
+    font-family: 'FontCursive', Arial, Helvetica, sans-serif, cursive !important;
     font-style: italic;
     font-size: 50px;
     font-weight: 400;
@@ -187,22 +209,22 @@
 
 }
 
-.outfit{
+.outfit {
     font-family: 'Outfit' !important;
-    font-size: 60px;
-    line-height: 50px;
-    font-weight: 800;
+    font-size: 35px;
+    line-height: 40px;
+    font-weight: 700;
 }
 
-.tabs{
-    font-family: 'Outfit'!important;
+.tabs {
+    font-family: 'Outfit' !important;
     font-size: 12px;
     font-weight: 500;
     line-height: 16px;
     text-transform: uppercase !important;
 }
 
-.text-small{
+.text-small {
     font-family: 'Outfit' !important;
     font-size: 16px;
     font-weight: 400;
@@ -257,7 +279,7 @@
         border-bottom: 1px solid rgba(256, 256, 256, .1);
         z-index: 999;
     }
-    
+
     .sticky-top.navbar-light {
         position: fixed;
         background: #FFFFFF;
@@ -288,47 +310,49 @@
 
 /*** Hero Header ***/
 .hero-header {
-    background: linear-gradient(hwb(240 84% 13% / 0.7), rgba(214, 214, 220, 0.897));
+    background: linear-gradient(hwb(240 84% 13% / 0.7), rgba(0, 41, 11, 0.897));
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-} 
+    object-fit: contain;
+    height: 70vh;
+}
 
-.breadcrumb-item + .breadcrumb-item::before {
+.breadcrumb-item+.breadcrumb-item::before {
     color: rgba(255, 255, 255, .5);
 }
 
 /* Booking Menu */
 .upbooking {
-    
-    background-color: #f8f9fa; 
+
+    background-color: #f8f9fa;
     padding: top 20px;
-    padding-bottom: 10px;    
+    padding-bottom: 10px;
 
 }
 
 .upbooking .container {
-   
-    max-width: 1200px; 
-    margin: 0 auto; 
+
+    max-width: 1200px;
+    margin: 0 auto;
 
 }
 
 .upbooking .row.align-items-center {
-    
-    min-height: 60px; 
+
+    min-height: 60px;
 }
 
 .upbooking .custom-select,
 .upbooking .form-control {
-    
-    height: 47px; 
+
+    height: 47px;
 }
 
 .upbooking .btn-primary {
-    
-    height: 47px; 
-    margin-top: -2px; 
+
+    height: 47px;
+    margin-top: -2px;
 }
 
 
@@ -477,6 +501,7 @@
 }
 
 @media (min-width: 768px) {
+
     .testimonial-carousel::before,
     .testimonial-carousel::after {
         width: 200px;
@@ -484,6 +509,7 @@
 }
 
 @media (min-width: 992px) {
+
     .testimonial-carousel::before,
     .testimonial-carousel::after {
         width: 300px;
@@ -529,6 +555,11 @@
 
 
 /*** Footer ***/
+
+.footer {
+    padding-left: 15%;
+}
+
 .footer .btn.btn-social {
     margin-right: 5px;
     width: 35px;
@@ -543,7 +574,7 @@
     transition: .3s;
 }
 
-.footext{
+.footext {
     font-family: 'Outfit' !important;
     font-size: 15px;
     font-weight: 400;
