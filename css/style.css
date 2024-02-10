@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-    --primary: #86B817;
+    --primary: #602F06;
     --secondary: #FE8800;
     --light: #F5F5F5;
     --dark: #14141F;
@@ -83,8 +83,8 @@
     position: relative;
     margin-right: 25px;
     padding: 35px 0;
-    color: #FFFFFF !important;
-    font-size: 18px;
+    color: black !important;
+    font-size: 13px;
     font-weight: 600;
     outline: none;
     transition: .5s;
@@ -101,7 +101,7 @@
 
 .carousel {
     width: 100vw; /* Make the carousel cover the entire viewport width */
-    height: 100vh; /* Make the carousel cover the entire viewport height */
+    /* height: 100vh; Make the carousel cover the entire viewport height */
     position: relative;
 }
 
@@ -112,9 +112,21 @@
     margin: auto;
 }
 
+
+.carousel-item::before {
+    content: ""; /* Create a pseudo-element to serve as the overlay */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Set the color and transparency of the overlay */
+    z-index: 1; /* Ensure the overlay is behind the image */
+}
+
 .carousel-caption {
     position: absolute;
-    top: 40%;
+    top: 15%;
     right: 15%;
     bottom: 80px;
     left: 15%;
@@ -151,7 +163,7 @@
     font-size: 100px !important;
     font-family: 'Outfit';
     line-height: 50px;
-    font-weight: 300;
+    font-weight: 700;
     color: #F5F5F5 !important;
 
 }
@@ -189,9 +201,9 @@
 
 .outfit{
     font-family: 'Outfit' !important;
-    font-size: 60px;
-    line-height: 50px;
-    font-weight: 800;
+    font-size: 35px;
+    line-height: 40px;
+    font-weight: 700;
 }
 
 .tabs{
@@ -292,6 +304,8 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    object-fit: contain;
+    height: 70vh;
 } 
 
 .breadcrumb-item + .breadcrumb-item::before {
