@@ -500,12 +500,21 @@
     z-index: 1;
 }
 
+.hero-header {
+    display: none;
+}
+
 @media (min-width: 768px) {
 
     .testimonial-carousel::before,
     .testimonial-carousel::after {
         width: 200px;
     }
+
+    .hero-header {
+        display: block;
+    }
+
 }
 
 @media (min-width: 992px) {
@@ -513,6 +522,10 @@
     .testimonial-carousel::before,
     .testimonial-carousel::after {
         width: 300px;
+    }
+
+    .hero-header {
+        display: block;
     }
 }
 
